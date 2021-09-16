@@ -8,7 +8,7 @@ Created: 9/15/2021
 Password Generator
 ================
 
-Link to Deployed Web app: //link
+Link to Deployed Web app: [Password Generator](https://paragasr.github.io/Password-Generator/)
 
 This web app will generate a random password that meets the user's criteria.
 
