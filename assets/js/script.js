@@ -31,9 +31,14 @@ function generatePassword() {
 
   var pwLength = prompt("Choose the length of the password", "8-128. Anything outside of this range will generate a password that is of random length.");
 
+  console.log(pwLength);
+
   //this statement will make sure that it is between 8 and 128 numbers. anything outside of the range will just grab at a random number
   if (pwLength >= 8 && pwLength <= 128) {
     alert("Your password will be " + pwLength + " characters long.")
+  // If the user cancels at this point, they will exit the criteria process
+  } else if (pwLength == null) {
+    return "Your Secure Password";
   } else {
     alert("The password generated will be a random length.");
     pwLength = Math.floor(Math.random() * 121) + 8;
